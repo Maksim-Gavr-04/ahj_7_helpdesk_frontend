@@ -1,5 +1,7 @@
 # Домашнее задание к занятию «Работа с HTTP»
 
+![CI](https://github.com/Maksim-Gavr-04/ahj_7_helpdesk_frontend/actions/workflows/web.yml/badge.svg)
+
 Правила сдачи задания:
 
 1. **Важно**: в рамках этого домашнего задания нужно использовать npm (а значит, никакого `yarn.lock` в репозитории быть не должно)
