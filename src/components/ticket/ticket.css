@@ -1,0 +1,65 @@
+.ticket {
+  padding: 20px;
+  border: 2px solid #1a1718;
+}
+
+.ticket:nth-child(n + 2) {
+  border-top: none;
+}
+
+.ticket-basic {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.ticket-description {
+  margin-top: 20px;
+  margin-left: calc(40px + 1.685vmax);
+}
+
+.ticket__status, .ticket__update, .ticket__delete {
+  width: 40px; 
+  height: 40px;
+  border: 1.5px solid #1a1718;
+  border-radius: 50%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.ticket__status {
+  margin-right: 1.685vmax;
+}
+
+.ticket__status:active, .ticket__update:active, .ticket__delete:active {
+  border-style: inset;
+}
+
+.checked {
+  background-image: url(/src/img/mark.svg);
+  background-size: 65%;
+}
+
+.ticket__update {
+  background-image: url(/src/img/update.svg);
+  background-size: 45%;
+}
+
+.ticket__delete {
+  background-image: url(/src/img/delete.svg);
+  background-size: 65%;
+}
+
+.ticket__buttons {
+  position: absolute;
+  right: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.ticket__time {
+  position: absolute;
+  right: calc(100px + 4vmax);
+}
